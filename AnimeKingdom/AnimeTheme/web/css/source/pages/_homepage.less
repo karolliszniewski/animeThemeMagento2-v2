@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(32, 31, 49);
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.top_glass {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: none !important;
+}
+
+.top_glass::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('@{baseDir}images/smoke.webp');
+    background-size: contain;
+    background-position: left center;
+    filter: grayscale(100%) blur(20px);
+    opacity: .35;
+    z-index: -1;
+
+}
+
+.top_glass::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+
+.page-header .panel.wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.logo-anime {
+    color: white !important;
+    text-decoration: none;
+}
+
+.logo-anime:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-anime-text {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.logo-anime-text-color {
+    color: rgb(255, 186, 222);
+}
+
+.level-top {
+    color: white !important;
+}
+
+#ui-id-1 {
+    background-color: rgb(32, 31, 49);
+}
+
+.section-item-content {
+    background-color: rgb(32, 31, 49);
+}
+
+.nav-toggle {
+    position: static !important;
+    color: white !important;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logo-hamburger-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.anime-hamburger {
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+}
+
+.minicart-wrapper .action.showcart:before {
+    color: #ffffff !important;
+}
+
+.block-search .label:before {
+    color: white;
+}
+
+.content-anime {
+    display: flex;
+    justify-content: space-between;
+
+}
